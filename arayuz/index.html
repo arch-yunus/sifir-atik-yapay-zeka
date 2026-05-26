@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıfır Atık YZ - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon">♻️</div>
+                <h1>Sıfır Atık YZ</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">📊 Dashboard</a>
+                <a href="#" class="nav-item">📷 Canlı Kamera</a>
+                <a href="#" class="nav-item">⚙️ Ayarlar</a>
+                <a href="#" class="nav-item">📚 Raporlar</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-title">
+                    <h2>Sistem Durumu: <span class="status-online">Aktif</span></h2>
+                    <p class="subtitle">Son Güncelleme: <span id="last-update">Şimdi</span></p>
+                </div>
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=0D8ABC&color=fff" alt="User">
+                </div>
+            </header>
+
+            <!-- Stats Grid -->
+            <section class="stats-grid">
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon pet">🍾</div>
+                    <div class="stat-info">
+                        <h3>PET Plastik</h3>
+                        <p class="stat-value" id="pet-count">1,245</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon hdpe">🧴</div>
+                    <div class="stat-info">
+                        <h3>HDPE Plastik</h3>
+                        <p class="stat-value" id="hdpe-count">856</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon metal">🥫</div>
+                    <div class="stat-info">
+                        <h3>Metal</h3>
+                        <p class="stat-value" id="metal-count">342</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon reject">🗑️</div>
+                    <div class="stat-info">
+                        <h3>Tanımlanamayan</h3>
+                        <p class="stat-value" id="reject-count">89</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Feed & Chart Area -->
+            <section class="dashboard-body">
+                <div class="live-feed glass-panel">
+                    <h3>🔴 Son Tespit Edilenler</h3>
+                    <div class="feed-list" id="feed-list">
+                        <!-- JS ile doldurulacak -->
+                    </div>
+                </div>
+                
+                <div class="efficiency-panel glass-panel">
+                    <h3>⚡ Sistem Verimliliği</h3>
+                    <div class="circular-progress">
+                        <div class="inner-circle">
+                            <span id="efficiency-value">%94</span>
+                        </div>
+                    </div>
+                    <p class="efficiency-text">Doğruluk Oranı (Son 1 Saat)</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Bu dizin eğitilmiş ONNX ve TensorFlow Lite (TFLite) modellerini barındırmak için kullanılacaktır.
+Modeller büyük dosyalar olabileceği için Git LFS kullanmanız önerilir.
